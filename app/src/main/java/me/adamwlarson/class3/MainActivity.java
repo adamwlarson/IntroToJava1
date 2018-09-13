@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int centuryFromYear(int year) {
-        //TODO add your code yere
-        return 0;
+       int century = 0;
+        if (year > 0){
+            double result = (double) year/100.0;
+            century = (int) Math.ceil(result);
+        }
+        return century;
     }
 }
